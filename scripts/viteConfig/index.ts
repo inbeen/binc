@@ -18,7 +18,7 @@ const viteConfig = async (config: UserConfig = {}) => {
   const lib = getLib(pkg);
 
   const result = {
-    plugins: [react(), dts()], // dts({ insertTypesEntry: true })
+    plugins: [react(), dts({ tsconfigPath: '../../tsconfig.app.json', insertTypesEntry: true })],
     build: {
       lib,
       rollupOptions: {

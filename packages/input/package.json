@@ -1,6 +1,6 @@
 {
   "name": "@binc/input",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "build": "vite build"
   },
@@ -12,13 +12,13 @@
     "binc",
     "input"
   ],
-  "main": "./dist/binc-input.umd.js",
-  "module": "./dist/binc-input.umd.js",
+  "main": "./dist/binc-input.umd.cjs",
+  "module": "./dist/binc-input.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/binc-input.umd.js",
-      "module": "./dist/binc-input.umd.js",
+      "require": "./dist/binc-input.umd.cjs",
+      "import": "./dist/binc-input.js",
       "types": "./dist/index.d.ts"
     }
   },

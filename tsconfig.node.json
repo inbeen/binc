@@ -1,8 +1,9 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
+    "composite": true,
     "target": "ES2022",
     "lib": ["ES2023"],
   },
-  "include": ["**/*.config.ts"]
+  "include": ["**/*.config.ts", "scripts"]
 }
