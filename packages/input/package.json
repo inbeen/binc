@@ -1,0 +1,33 @@
+{
+  "name": "@binc/input",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "vite build"
+  },
+  "type": "module",
+  "author": "inbeen",
+  "license": "ISC",
+  "description": "",
+  "main": "./dist/binc-input.umd.js",
+  "module": "./dist/binc-input.umd.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/binc-input.umd.js",
+      "module": "./dist/binc-input.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "antd": "^5.20.0",
+    "react": "^18.3.1"
+  },
+  "peerDependencies": {
+    "antd": "^5.20.0",
+    "react": "^18.3.1"
+  }
+}
