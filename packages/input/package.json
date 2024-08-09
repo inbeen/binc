@@ -8,6 +8,10 @@
   "author": "inbeen",
   "license": "ISC",
   "description": "",
+  "keywords": [
+    "binc",
+    "input"
+  ],
   "main": "./dist/binc-input.umd.js",
   "module": "./dist/binc-input.umd.js",
   "types": "./dist/index.d.ts",
@@ -17,6 +21,14 @@
       "module": "./dist/binc-input.umd.js",
       "types": "./dist/index.d.ts"
     }
+  },
+  "homepage": "https://github.com/inbeen/binc/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inbeen/binc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inbeen/binc/issues"
   },
   "files": [
     "dist",
