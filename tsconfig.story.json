@@ -9,5 +9,5 @@
       "@binc/*": ["packages/*/src"]
     }
   },
-  "include": ["stories"]
+  "include": ["stories", "packages/**/src"]
 }

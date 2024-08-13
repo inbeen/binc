@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react';
+import type { ChangeEvent } from 'react';
 import { Row, Col } from 'antd';
 import { Input } from '@binc/input';
 import type { InputProps } from '@binc/input';
@@ -6,11 +7,11 @@ import type { InputProps } from '@binc/input';
 const Composition = (props: InputProps) => {
   const [val, setVal] = useState('123');
 
-  const handleChange = useCallback((e) => {
+  const handleChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
     console.log('默认变化', e.target.value);
   }, []);
 
-  const handleChange2 = useCallback((e) => {
+  const handleChange2 = useCallback((e: ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;
     console.log('受控变化', val);
     setVal(val);
