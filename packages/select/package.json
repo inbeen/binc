@@ -1,0 +1,44 @@
+{
+  "name": "@binc/select",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vite build"
+  },
+  "type": "module",
+  "author": "inbeen",
+  "license": "ISC",
+  "description": "",
+  "keywords": [
+    "binc"
+  ],
+  "main": "./dist/binc-select.umd.cjs",
+  "module": "./dist/binc-select.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/binc-select.umd.cjs",
+      "import": "./dist/binc-select.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "homepage": "https://github.com/inbeen/binc/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inbeen/binc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inbeen/binc/issues"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "antd": "^5.20.0",
+    "react": "^18.3.1"
+  },
+  "peerDependencies": {
+    "antd": "^5.20.0",
+    "react": "^18.3.1"
+  }
+}

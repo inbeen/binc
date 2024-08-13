@@ -1,0 +1,22 @@
+.binc-select-trigger {
+  position: relative;
+  min-width: 120px;
+
+  &__wrapper {
+    position: absolute;
+    display: flex;
+    pointer-events: none;
+  }
+
+  &__prefix {
+    width: 16px;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__suffix {
+    width: 16px;
+  }
+}
