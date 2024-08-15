@@ -1,0 +1,50 @@
+{
+  "name": "@binc/data-tabs",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "vite build"
+  },
+  "type": "module",
+  "author": "inbeen",
+  "license": "ISC",
+  "description": "",
+  "keywords": [
+    "binc"
+  ],
+  "main": "./dist/binc-data-tabs.umd.cjs",
+  "module": "./dist/binc-data-tabs.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/binc-data-tabs.umd.cjs",
+      "import": "./dist/binc-data-tabs.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "homepage": "https://github.com/inbeen/binc/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inbeen/binc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inbeen/binc/issues"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@ant-design/icons": "^5.4.0",
+    "@types/lodash-es": "^4.17.12",
+    "antd": "^5.20.0",
+    "react": "^18.3.1"
+  },
+  "peerDependencies": {
+    "@ant-design/icons": "^5.4.0",
+    "antd": "^5.20.0",
+    "react": "^18.3.1"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
+}

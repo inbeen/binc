@@ -1,0 +1,61 @@
+$tabs: binc-data-tabs;
+
+.#{$tabs} {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+
+  &__group {
+    display: flex;
+    padding: 12px 16px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+
+  &__divided {
+    width: 1px;
+    height: 100%;
+    margin: 0 16px;
+    background-color: #ddd;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__title {
+      overflow: hidden;
+      font-size: 20px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &__value {
+      margin-top: 8px;
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    &--active {
+      .#{$tabs}__item__title {
+        color: #3370ff;
+      }
+    }
+
+    &--disabled {
+      .#{$tabs}__item__title,
+      .#{$tabs}__item__value {
+        color: rgb(0 0 0 / 25%);
+      }
+    }
+  }
+}

@@ -17,6 +17,5 @@
 
 - 测试
 - 新增组件
-  - data-tabs
   - select
   - filter
