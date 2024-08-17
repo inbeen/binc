@@ -1,0 +1,16 @@
+.binc-filter {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item,
+  &__btn {
+    margin-top: 8px;
+    margin-right: 16px;
+  }
+
+  &__btn {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

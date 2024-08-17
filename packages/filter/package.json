@@ -1,0 +1,46 @@
+{
+  "name": "@binc/filter",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "vite build"
+  },
+  "type": "module",
+  "author": "inbeen",
+  "license": "ISC",
+  "description": "",
+  "keywords": [
+    "binc"
+  ],
+  "main": "./dist/binc-filter.umd.cjs",
+  "module": "./dist/binc-filter.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/binc-filter.umd.cjs",
+      "import": "./dist/binc-filter.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "homepage": "https://github.com/inbeen/binc/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inbeen/binc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inbeen/binc/issues"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@ant-design/icons": "^5.4.0",
+    "antd": "^5.20.0",
+    "react": "^18.3.1"
+  },
+  "peerDependencies": {
+    "@ant-design/icons": "^5.4.0",
+    "antd": "^5.20.0",
+    "react": "^18.3.1"
+  }
+}
