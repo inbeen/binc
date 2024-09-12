@@ -43,7 +43,11 @@ const Composition = (props: DataTabsProps) => {
     [done]
   );
 
-  return <DataTabs {...props} items={items} activeKey={key} onChange={handleChange} />;
+  return (
+    <div className="storybook-demo-data-tabs">
+      <DataTabs {...props} items={items} activeKey={key} onChange={handleChange} />
+    </div>
+  );
 };
 
 export default Composition;
