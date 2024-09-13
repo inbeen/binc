@@ -8,7 +8,7 @@
 - 管理: Pnpm
 - 代码规范: ESlint, Stylelint, Sass, Prettier
 - 预览: Storybook
-- 测试: Jest & Storybook test
+- 测试: Vitest & Storybook test
 - 工作流
   - Husky, Commitlint
   - 提交: commitizen, Commitlint

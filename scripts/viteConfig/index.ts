@@ -18,7 +18,7 @@ const viteConfig = async (config: UserConfig = {}) => {
 
   const lib = getLib(pkg);
 
-  const test = getTest();
+  const test = getTest(pkg);
 
   const result = {
     plugins: [react(), dts({ tsconfigPath: absCwd('../../tsconfig.app.json'), insertTypesEntry: true })],

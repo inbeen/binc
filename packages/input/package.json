@@ -4,6 +4,7 @@
   "scripts": {
     "test": "vitest",
     "test:run": "vitest run",
+    "coverage": "vitest run --coverage",
     "build": "vite build"
   },
   "type": "module",
