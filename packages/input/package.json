@@ -2,6 +2,8 @@
   "name": "@binc/input",
   "version": "0.0.3",
   "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
     "build": "vite build"
   },
   "type": "module",

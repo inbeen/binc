@@ -45,7 +45,7 @@ const render = (name) => {
 };
 
 const generate = (name) => {
-  const source = resolve('./packages/template');
+  const source = resolve('./template');
   const target = resolve(`./packages/${name}`);
   copy(source, target)
     .then(() => render(name))

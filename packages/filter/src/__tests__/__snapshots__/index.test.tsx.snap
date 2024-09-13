@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Filter > should work 1`] = `
+<div
+  class="binc-filter"
+>
+  <button
+    class="ant-btn css-dev-only-do-not-override-1c0na6j ant-btn-default ant-dropdown-trigger binc-filter__btn"
+    disabled=""
+    type="button"
+  >
+    <span
+      class="ant-btn-icon"
+    >
+      <span
+        aria-label="plus"
+        class="anticon anticon-plus"
+        role="img"
+      >
+        <svg
+          aria-hidden="true"
+          data-icon="plus"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          viewBox="64 64 896 896"
+          width="1em"
+        >
+          <path
+            d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
+          />
+          <path
+            d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"
+          />
+        </svg>
+      </span>
+    </span>
+    <span>
+      New
+    </span>
+  </button>
+</div>
+`;

@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 import { getExternal } from './external';
 import { getLib } from './lib';
+import { getTest } from './test';
 import { readJsonFile } from '../helpers/file';
 import { absCwd } from '../helpers/path';
 import type { PackageJson } from 'type-fest';
@@ -17,6 +18,8 @@ const viteConfig = async (config: UserConfig = {}) => {
 
   const lib = getLib(pkg);
 
+  const test = getTest();
+
   const result = {
     plugins: [react(), dts({ tsconfigPath: absCwd('../../tsconfig.app.json'), insertTypesEntry: true })],
     build: {
@@ -25,7 +28,8 @@ const viteConfig = async (config: UserConfig = {}) => {
         external,
         output: { globals: outputGlobals }
       }
-    }
+    },
+    test
   };
 
   return mergeConfig(result, config) as UserConfig;

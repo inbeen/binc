@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Input > should work 1`] = `
+<input
+  class="ant-input css-dev-only-do-not-override-1c0na6j ant-input-outlined"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Textarea > should work 1`] = `
+<textarea
+  class="ant-input css-dev-only-do-not-override-1c0na6j ant-input-outlined"
+/>
+`;
