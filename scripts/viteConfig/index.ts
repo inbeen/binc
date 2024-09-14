@@ -21,7 +21,15 @@ const viteConfig = async (config: UserConfig = {}) => {
   const test = getTest(pkg);
 
   const result = {
-    plugins: [react(), dts({ tsconfigPath: absCwd('../../tsconfig.app.json'), insertTypesEntry: true })],
+    plugins: [
+      react(),
+      dts({
+        entryRoot: 'src',
+        tsconfigPath: absCwd('../../tsconfig.app.json'),
+        insertTypesEntry: true,
+        exclude: ['**/__tests__/**']
+      })
+    ],
     build: {
       lib,
       rollupOptions: {

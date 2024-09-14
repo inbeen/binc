@@ -1,5 +1,11 @@
 # @binc/data-tabs
 
+## 0.0.3
+
+### Patch Changes
+
+- 修复打包内容类型文件异常
+
 ## 0.0.2
 
 ### Patch Changes
