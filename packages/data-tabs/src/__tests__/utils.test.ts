@@ -50,10 +50,13 @@ describe('Utils', () => {
       expect(format(77.77)).toBe('77.77');
     });
 
-    // TODO
-    // it('format negative', () => {
-    //   expect(format(-777777)).toBe('-777.78k');
-    // });
+    it('format negative', () => {
+      expect(format(-777777)).toBe('-777.78k');
+    });
+
+    it('format zero', () => {
+      expect(format(0)).toBe('0');
+    });
   });
 
   describe('getGroupWidth', () => {
@@ -91,12 +94,11 @@ describe('Utils', () => {
         c: 1,
         long: 1
       });
-      // TODO
-      // expect(getGroupConfig(10, nestItems)).toStrictEqual({
-      //   total: 1,
-      //   a: 1,
-      //   group: 5
-      // });
+      expect(getGroupConfig(10, nestItems)).toStrictEqual({
+        total: 1,
+        a: 1,
+        group: 5
+      });
     });
   });
 

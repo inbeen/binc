@@ -25,7 +25,7 @@ const DataTabsGroup = (props: DataTabsGroupProps) => {
       {itemsRender}
       {restList.length ? (
         <Fragment key="_key">
-          <div className="binc-data-tabs__divided" />
+          {showList.length > 0 && <div className="binc-data-tabs__divided" />}
           <Item key="rest" data={restList} />
         </Fragment>
       ) : null}

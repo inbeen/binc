@@ -25,6 +25,7 @@ const useLogic = (props: DataTabsProps) => {
         setItemWidth(iw);
         setMinWidth(cw);
         setGroupConfig(gc);
+        console.log(gc);
       },
       10,
       { leading: true }

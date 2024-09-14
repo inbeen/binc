@@ -1,5 +1,11 @@
 # @binc/data-tabs
 
+## 0.0.2
+
+### Patch Changes
+
+- 修复展示个数计算问题 & 数据格式错误
+
 ## 0.0.1
 
 ### Patch Changes

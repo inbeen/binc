@@ -176,9 +176,6 @@ exports[`DataTabs > shoule nest items work 1`] = `
     class="binc-data-tabs__group"
   >
     <div
-      class="binc-data-tabs__divided"
-    />
-    <div
       class="binc-data-tabs__item binc-data-tabs__item--active  binc-data-tabs__item--disabled"
       style="width: 120px;"
     >

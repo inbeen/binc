@@ -40,7 +40,7 @@ export const format = (value: number | string): string => {
   const [integer] = (isNegative ? val.slice(1) : val).split('.');
   for (const [unit, base] of unitMap.entries()) {
     if (Number(integer) > base) {
-      return `${Math.round((Number(integer) / base) * 100) / 100}${unit}`;
+      return `${isNegative ? '-' : ''}${Math.round((Number(integer) / base) * 100) / 100}${unit}`;
     }
   }
   return val;
@@ -64,7 +64,7 @@ export const getGroupConfig = (num: number, items: (DataTabsItem | DataTabsGroup
     const list = (item as DataTabsGroup).items;
     if (list) {
       const len = list.length;
-      const add = Math.min(remain, len);
+      const add = Math.min(remain, len - 1);
       config[item.key] += add;
       remain -= add;
     }
