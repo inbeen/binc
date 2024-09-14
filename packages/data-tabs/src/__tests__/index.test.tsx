@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
 import { render } from '@testing-library/react';
 import { DataTabs } from '..';
+import { flatItems, nestItems } from './data';
 
 // Mock ResizeObserver
 global.ResizeObserver = vi.fn().mockImplementation(() => ({
@@ -10,8 +11,15 @@ global.ResizeObserver = vi.fn().mockImplementation(() => ({
 }));
 
 describe('DataTabs', () => {
-  it('should work', () => {
-    const { asFragment } = render(<DataTabs items={[]} />);
+  it('should flat items work', () => {
+    const { asFragment, container } = render(<DataTabs activeKey="c" items={flatItems} />);
     expect(asFragment().firstChild).toMatchSnapshot();
+    expect(container.querySelectorAll('.binc-data-tabs__group').length).toBe(5);
+  });
+
+  it('shoule nest items work', () => {
+    const { asFragment, container } = render(<DataTabs activeKey="c" items={nestItems} />);
+    expect(asFragment().firstChild).toMatchSnapshot();
+    expect(container.querySelectorAll('.binc-data-tabs__group').length).toBe(3);
   });
 });
