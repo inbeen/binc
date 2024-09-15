@@ -1,4 +1,5 @@
 import { cloneElement, useCallback, useMemo } from 'react';
+import type { ChangeEvent } from 'react';
 import { Select, Cascader, Input, DatePicker } from 'antd';
 import type { FilterItemProps } from '../typings';
 
@@ -14,6 +15,15 @@ const useLogic = (props: FilterItemProps) => {
     [config, onChange]
   );
 
+  const handleInputChange = useCallback(
+    (e: ChangeEvent<HTMLInputElement>) => {
+      const val = e.target.value;
+      config.payload?.onChange && config.payload.onChange(e);
+      onChange(config.name, val);
+    },
+    [config, onChange]
+  );
+
   const component = useMemo(() => {
     switch (config.type) {
       case 'select': {
@@ -22,7 +32,7 @@ const useLogic = (props: FilterItemProps) => {
       }
       case 'input': {
         const pl = config.payload || {};
-        return <Input {...pl} value={value} onChange={handleChange} />;
+        return <Input {...pl} value={value} onChange={handleInputChange} />;
       }
       case 'cascader': {
         const pl = config.payload || {};
@@ -47,7 +57,7 @@ const useLogic = (props: FilterItemProps) => {
         return cloneElement(config.component, payload);
       }
     }
-  }, [value, config, handleChange]);
+  }, [value, config, handleChange, handleInputChange]);
 
   return { component };
 };

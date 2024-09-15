@@ -14,7 +14,7 @@ const Filter = (props: FilterProps) => {
       {itemsRender}
 
       <Dropdown menu={addProps.menu} trigger={['click']}>
-        <Button className="binc-filter__btn" icon={<PlusOutlined />} disabled={addProps.disabled}>
+        <Button className="binc-filter__btn binc-filter__btn__new" icon={<PlusOutlined />} disabled={addProps.disabled}>
           New
         </Button>
       </Dropdown>
@@ -22,7 +22,12 @@ const Filter = (props: FilterProps) => {
       {allowSave && <Save value={value} saveData={saveData} onSelect={handleSelect} onSave={handleSave} />}
 
       {allowClear && (
-        <Button className="binc-filter__btn" icon={<DeleteOutlined />} onClick={handleClear} disabled={!value.length} />
+        <Button
+          className="binc-filter__btn binc-filter__btn__clear"
+          icon={<DeleteOutlined />}
+          onClick={handleClear}
+          disabled={!value.length}
+        />
       )}
     </div>
   );

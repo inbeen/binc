@@ -1,5 +1,11 @@
 # @binc/filter
 
+## 0.0.3
+
+### Patch Changes
+
+- 按钮补充类名 & 测试
+
 ## 0.0.2
 
 ### Patch Changes

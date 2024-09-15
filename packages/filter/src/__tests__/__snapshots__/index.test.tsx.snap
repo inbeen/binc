@@ -5,7 +5,7 @@ exports[`Filter > should work 1`] = `
   class="binc-filter"
 >
   <button
-    class="ant-btn css-dev-only-do-not-override-1c0na6j ant-btn-default ant-dropdown-trigger binc-filter__btn"
+    class="ant-btn css-dev-only-do-not-override-1c0na6j ant-btn-default ant-dropdown-trigger binc-filter__btn binc-filter__btn__new"
     disabled=""
     type="button"
   >

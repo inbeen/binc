@@ -10,11 +10,16 @@ const Save = (props: FilterSaveProps) => {
 
   return (
     <>
-      <Button className="binc-filter__btn" icon={<SaveOutlined />} onClick={handleOpen} disabled={!value.length} />
+      <Button
+        className="binc-filter__btn binc-filter__btn__save"
+        icon={<SaveOutlined />}
+        onClick={handleOpen}
+        disabled={!value.length}
+      />
 
       {saveData.length > 0 && (
         <Dropdown menu={menuProps} trigger={['click']}>
-          <Button className="binc-filter__btn" icon={<DatabaseOutlined />} />
+          <Button className="binc-filter__btn binc-filter__btn__database" icon={<DatabaseOutlined />} />
         </Dropdown>
       )}
 
