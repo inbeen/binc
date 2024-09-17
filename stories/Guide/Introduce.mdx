@@ -1,57 +1,44 @@
 import { Meta } from '@storybook/blocks';
 
-import Github from '../assets/github.svg';
+<Meta title="Introduction" />
 
-export const RightArrow = () => (
-  <svg
-    viewBox="0 0 14 14"
-    width="8px"
-    height="14px"
-    style={{
-      marginLeft: '4px',
-      display: 'inline-block',
-      shapeRendering: 'inherit',
-      verticalAlign: 'middle',
-      fill: 'currentColor',
-      'path fill': 'currentColor'
-    }}
-  >
-    <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
-  </svg>
-);
+<div align="center">
+<h1>Binc</h1>
 
-<Meta title="介绍" />
+Bin Component
 
-<div className="sb-section">
-    <div className="sb-section-item">
-      <img src={Github} alt="Github logo" className="sb-icon"/>
-      <a href="https://github.com/inbeen/binc" target="_blank">Star on GitHub<RightArrow /></a>
-    </div>
+[![Coverage Status](https://coveralls.io/repos/github/inbeen/binc/badge.svg?branch=main)](https://coveralls.io/github/inbeen/binc?branch=main)
 
 </div>
 
-<style>
-  {`
-  .sb-section {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
+## ✨ 特性
 
-  img {
-    object-fit: cover;
-  }
+- 📦 开箱即用的 React 组件
+- 🔥 基于 antd 封装的业务组件
+- 🛡 使用 TypeScript 开发，提供完整的类型定义文件
 
-  .sb-section-item {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
+## ⌨️ 本地开发
 
-  .sb-icon {
-    max-height: 32px;
-    align-self: flex-start;
-  }
-  `}
-</style>
+```bash
+$ git clone https://github.com/inbeen/binc.git
+$ cd binc
+$ pnpm install
+$ pnpm storybook
+```
+
+## 🧑‍💻 制作初衷
+
+- 熟悉组件库的整个研发过程
+- 记录部分实现过的组件
+
+## 🔧 技术选型
+
+- 基础: Typescript & React
+- 管理: Pnpm
+- 代码规范: ESlint, Stylelint, Sass, Prettier
+- 预览: Storybook
+- 测试: Vitest & Storybook test
+- 工作流
+  - Husky, Commitlint
+  - 提交: commitizen, Commitlint
+  - 打包: Changesets

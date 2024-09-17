@@ -3,7 +3,7 @@ import { Filter } from '@binc/filter';
 import type { FilterProps, FilterItem, FilterValue } from '@binc/filter';
 import { itemsMap } from './utils';
 
-const Demo = (props: FilterProps) => {
+const Test = (props: FilterProps) => {
   const handleChange = useCallback((val: FilterValue[]) => {
     console.log(val);
   }, []);
@@ -22,4 +22,4 @@ const Demo = (props: FilterProps) => {
   );
 };
 
-export default Demo;
+export default Test;

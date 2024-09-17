@@ -1,6 +1,7 @@
 import type { Preview } from '@storybook/react';
 
 const preview: Preview = {
+  tags: ['!dev'],
   parameters: {
     backgrounds: {
       values: [

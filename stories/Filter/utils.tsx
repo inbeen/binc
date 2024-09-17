@@ -8,7 +8,6 @@ export const itemsMap: Record<string, FilterItem[]> = {
       label: '选择',
       type: 'select',
       payload: {
-        open: true,
         options: Array.from({ length: 5 }).map((_, idx: number) => ({ label: idx, value: idx.toString() }))
       }
     },

@@ -1,0 +1,65 @@
+import { ArgTypes, Canvas, Meta } from '@storybook/blocks';
+import * as InputStories from './Input.stories';
+
+<Meta of={InputStories} />
+
+# 输入框 Input
+
+基于 [Antd Input](https://ant.design/components/input) 封装，提供以下能力：
+
+- 新增 API `composition`，快速支持中文输入，拼写时不触发变更。
+
+## 安装
+
+```bash
+# npm
+$ npm install @binc/input
+
+# yarn
+$ yarn add @binc/input
+
+# pnpm
+$ pnpm add @binc/input
+```
+
+## 使用
+
+```tsx
+import { Input } from '@binc/input';
+
+<Input />;
+```
+
+## 支持中文输入
+
+<Canvas of={InputStories.Composition} source={{ code: `import { useState } from 'react';
+import { Input } from '@binc/input';
+
+const Composition = () => {
+  const [val1, setVal1] = useState('');
+  const [val2, setVal2] = useState('');
+
+  return (
+    <div>
+      默认模式：{val1}
+      <br />
+      <br />
+      <Input placeholder="请输入" onChange={(e) => setVal1(e.target.value)} />
+      <br />
+      <br />
+      <br />
+      中文模式：{val2}
+      <br />
+      <br />
+      <Input placeholder="请输入" composition onChange={(e) => setVal2(e.target.value)} />
+    </div>
+  );
+};
+
+export default Composition;`, language: 'tsx' }} />
+
+## API
+
+继承自 [Antd Input](https://ant.design/components/input#api)
+
+<ArgTypes />
