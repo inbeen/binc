@@ -4,7 +4,7 @@ import DemoTest from './Test';
 import { itemsMap } from './utils';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
-const meta = {
+const meta: Meta<typeof Filter> = {
   title: 'Component/Filter',
   component: Filter,
   parameters: {
@@ -39,7 +39,7 @@ const meta = {
     onChange: { description: '变更筛选内容的回调' },
     onSaveData: { description: '保存筛选内容的回调' }
   }
-} satisfies Meta<typeof Filter>;
+};
 
 export default meta;
 type Story = StoryObj<typeof meta>;

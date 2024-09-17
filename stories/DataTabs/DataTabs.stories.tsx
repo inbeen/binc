@@ -14,6 +14,13 @@ const meta: Meta<typeof DataTabs> = {
     backgrounds: {
       default: 'gray'
     }
+  },
+  argTypes: {
+    activeKey: { description: '指定当前选中的页签' },
+    className: { description: '容器的 className' },
+    items: { description: '可选的筛选项配置' },
+    style: { description: '容器的 style' },
+    onChange: { description: '变更选中页签的回调' }
   }
 };
 
