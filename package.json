@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "create": "binc create",
+    "create": "tsx scripts/create.ts",
     "commit": "git-cz",
     "dev": "vite",
     "test": "vitest",
@@ -22,9 +22,6 @@
     "alpha": "changeset pre enter alpha",
     "alpha:exit": "changeset pre exit"
   },
-  "bin": {
-    "binc": "scripts/cli/index.js"
-  },
   "dependencies": {
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.7",
@@ -36,6 +33,7 @@
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@eslint/js": "^9.8.0",
+    "@inquirer/prompts": "^6.0.1",
     "@storybook/addon-coverage": "^1.0.4",
     "@storybook/addon-essentials": "^8.3.1",
     "@storybook/addon-interactions": "^8.3.1",
@@ -51,6 +49,8 @@
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
+    "@types/ejs": "^3.1.5",
+    "@types/fs-extra": "^11.0.4",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
@@ -70,7 +70,6 @@
     "fs-extra": "^11.2.0",
     "globals": "^15.9.0",
     "husky": "^9.1.4",
-    "inquirer": "^10.1.8",
     "jsdom": "^25.0.0",
     "lint-staged": "^15.2.8",
     "prettier": "^3.3.3",
@@ -81,6 +80,7 @@
     "stylelint-config-standard": "^36.0.1",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-prettier": "^5.0.2",
+    "tsx": "^4.19.1",
     "type-fest": "^4.24.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.0",
