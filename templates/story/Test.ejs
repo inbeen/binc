@@ -1,0 +1,14 @@
+import { useCallback, useMemo } from 'react';
+import { <%- component %> } from '@binc/<%- name %>';
+import type { <%- component %>Props } from '@binc/filter';
+
+const Test = (props: FilterProps) => {
+  return (
+    <<%- component %>
+      {...props}
+      a="test"
+    />
+  );
+};
+
+export default Test;
