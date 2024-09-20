@@ -6,6 +6,7 @@
     "create": "tsx scripts/create.ts",
     "commit": "git-cz",
     "dev": "vite",
+    "build": "pnpm -r run build",
     "test": "vitest",
     "test:run": "vitest run",
     "coverage": "vitest run --coverage",
