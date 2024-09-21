@@ -62,14 +62,23 @@ export interface FilterSaveData {
 }
 
 export interface FilterProps {
+  /** 是否允许清除 */
   allowClear?: boolean;
+  /** 是否支持保存功能 */
   allowSave?: boolean;
+  /** 指定当前选中的筛选内容 */
   value?: FilterValue[];
+  /** 指定默认选中的筛选内容 */
   defaultValue?: FilterValue[];
+  /** 指定当前保存的筛选记录 */
   saveData?: FilterSaveData[];
+  /** 指定默认保存的筛选项记录 */
   defaultSaveData?: FilterSaveData[];
+  /** 可选的筛选项配置 */
   items: FilterItem[];
+  /** 变更筛选内容的回调 */
   onChange?: (value: FilterValue[], payload?: FilterValue) => void;
+  /** 保存筛选内容的回调 */
   onSaveData?: (data: FilterSaveData[], payload?: FilterSaveData) => Promise<void> | void;
 }
 

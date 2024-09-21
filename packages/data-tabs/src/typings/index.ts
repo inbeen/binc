@@ -24,10 +24,15 @@ export interface DataTabsItemProps {
 }
 
 export interface DataTabsProps {
+  /** 指定当前选中的页签 */
   activeKey?: string;
+  /** 容器的 className */
   className?: string;
+  /** 可选的筛选项配置 */
   items: (DataTabsGroup | DataTabsItem)[];
+  /** 容器的 style */
   style?: CSSProperties;
+  /** 变更选中页签的回调 */
   onChange?: (key: string) => void;
 }
 

@@ -15,8 +15,6 @@ const meta: Meta<typeof Input> = {
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
     composition: {
-      type: 'boolean',
-      description: '是否支持中文模式，拼写时不触发变更事件',
       table: {
         defaultValue: { summary: 'false' }
       }

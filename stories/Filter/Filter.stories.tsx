@@ -13,31 +13,22 @@ const meta: Meta<typeof Filter> = {
   },
   argTypes: {
     allowClear: {
-      description: '是否允许清除',
       table: {
         defaultValue: { summary: 'false' }
       }
     },
     allowSave: {
-      description: '是否支持保存功能',
       table: {
         defaultValue: { summary: 'false' }
       }
     },
-    value: { description: '指定当前选中的筛选内容' },
-    defaultValue: { description: '指定默认选中的筛选内容' },
-    saveData: { description: '指定当前保存的筛选记录' },
-    defaultSaveData: { description: '指定默认保存的筛选项记录' },
     items: {
-      description: '可选的筛选项配置',
       options: Object.keys(itemsMap),
       mapping: itemsMap,
       control: {
         type: 'select'
       }
-    },
-    onChange: { description: '变更筛选内容的回调' },
-    onSaveData: { description: '保存筛选内容的回调' }
+    }
   }
 };
 
